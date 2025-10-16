@@ -3,11 +3,18 @@ using UnityEngine;
 public class TestGrab : MonoBehaviour, IGrabbable
 {
     VRControllerGrab currentController;
+    public bool gravityOn;
+    public GameObject model;
+
+
+
     public void GrabStart(VRControllerGrab controller)
     {
         Debug.Log("Grab Start");
 
-        if(currentController != null)
+        model.GetComponent<Rigidbody>().isKinematic = true;
+
+        if (currentController != null)
         {
             if(currentController != controller)
             {
@@ -34,5 +41,7 @@ public class TestGrab : MonoBehaviour, IGrabbable
         currentController.GrabGone(true, transform);
 
         currentController = null;
+
+        model.GetComponent<Rigidbody>().isKinematic = false;
     }
 }
