@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/VRTemplate.unity
+    guid: 144bfcafddf99ab45941fdc7c75520b9
+  - enabled: 0
     path: Assets/Scenes/ExtendedRealityProject.unity
     guid: 64ede3747e039b54292a63d3e63a25f7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:

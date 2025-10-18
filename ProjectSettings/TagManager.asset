@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Interactable
   - Grabbable
+  - lighterFlame
   layers:
   - Default
   - TransparentFX
